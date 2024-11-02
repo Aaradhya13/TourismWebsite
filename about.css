@@ -1,0 +1,140 @@
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.tours h1, #about h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.line {
+    width: 50px;
+    height: 4px;
+    background-color: #e91e63;
+    margin: 10px auto;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.image-gallery {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 20px;
+}
+
+.image-gallery img {
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #e91e63;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+
+
+
+.about-content img {
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.about-content {
+    display: flex;           
+    flex-wrap: wrap;       
+    gap: 20px;            
+    justify-content: center; 
+}
+
+.about-content img {
+    width: calc(50% - 10px); 
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.about-content img {
+    width: calc(50% - 10px); 
+    border-radius: 20px;
+    margin-top: 20px;
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+}
+
+.about-content img:active {
+    transform: scale(0.95);
+}
+
+.about-content img:hover {
+    transform: scale(1.05); 
+}
+.made-by-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.made-by {
+    text-align: left;
+    background: linear-gradient(135deg, #2b2b2b, #000);
+    color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
+    max-width: 300px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.made-by p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.made-by .name {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.made-by .name:hover {
+    color: #e91e63;
+    transform: scale(1.05);
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

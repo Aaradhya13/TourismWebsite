@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore the United States</title>
+    <link rel="stylesheet" href="explore.css">
+</head>
+<body>
+    <header>
+        <h1>Explore the United States</h1>
+        <nav>
+            <a href="#destinations">Destinations</a>
+            
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Discover Beautiful Places Across the USA</h2>
+        <p>From stunning landscapes to iconic landmarks, the USA has it all.</p>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <h2>Top Destinations</h2>
+        <div class="destination-cards">
+            <!-- New York City -->
+            <a href="https://www.nycgo.com/" class="card" target="_blank">
+                <img src="https://wallpapercave.com/wp/wp2000976.jpg" alt="New York">
+                <h3>New York City</h3>
+            </a>
+
+            <!-- Grand Canyon -->
+            <a href="https://www.nps.gov/grca/index.htm" class="card" target="_blank">
+                <img src="https://cdn.getyourguide.com/img/location/5d496bf89dfba.jpeg/88.jpg" alt="Grand Canyon">
+                <h3>Grand Canyon</h3>
+            </a>
+
+            <!-- Yellowstone -->
+            <a href="https://www.nps.gov/yell/index.htm" class="card" target="_blank">
+                <img src="https://historythings.com/wp-content/uploads/2016/09/Yellowstone-National-park.jpg2_.jpg" alt="Yellowstone">
+                <h3>Yellowstone</h3>
+            </a>
+
+            <!-- Hawaii -->
+            <a href="https://www.gohawaii.com/" class="card" target="_blank">
+                <img src="https://www.reservations.com/blog/wp-content/uploads/2018/10/shutterstock_750773470.jpg" alt="Hawaii">
+                <h3>Hawaii</h3>
+            </a>
+        </div>
+    </section>
+
+    <div id="destination-info" class="info-popup">
+        <span class="close-btn" onclick="closeInfo()">&times;</span>
+        <h3 id="info-title"></h3>
+        <p id="info-description"></p>
+    </div>
+
+    <script src="explore.js"></script>
+</body>
+</html>

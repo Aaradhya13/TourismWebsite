@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in the United States</title>
+    <link rel="stylesheet" href="events.css">
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events in the United States</h1>
+    </header>
+
+    <section id="events" class="events">
+        <h2>Popular Events</h2>
+        <div class="event-cards">
+            <!-- Event: New Year's Eve in Times Square -->
+            <div class="card" onclick="showEventInfo('newYearEve')">
+                <img src="https://1.bp.blogspot.com/-X_P515Y7OK0/WGYXRQNDYJI/AAAAAAAAAk4/T4lTHE7Cpak9zPBH-Gg7rrg_SMNa24XlwCLcB/s1600/times.jpg" alt="New Year's Eve in Times Square">
+                <h3>New Year's Eve in Times Square</h3>
+                <p>Date: December 31</p>
+            </div>
+
+            <!-- Event: Mardi Gras in New Orleans -->
+            <div class="card" onclick="showEventInfo('mardiGras')">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/ee/Mardi_Gras_Parade%2C_New_Orleans%2C_Louisiana_(LOC).jpg" alt="Mardi Gras in New Orleans">
+                <h3>Mardi Gras in New Orleans</h3>
+                <p>Date: February (varies)</p>
+            </div>
+
+            <!-- Event: Coachella Festival -->
+            <div class="card" onclick="showEventInfo('coachella')">
+                <img src="https://cdn.joinnus.com/wp-content/uploads/2024/01/17102932/portada-coachella-2024-lineup-1000x600.jpg" alt="Coachella Festival">
+                <h3>Coachella Festival</h3>
+                <p>Date: April (varies)</p>
+            </div>
+
+            <!-- Event: Independence Day in Washington, D.C. -->
+            <div class="card" onclick="showEventInfo('independenceDay')">
+                <img src="https://themindunleashed.com/wp-content/uploads/2019/07/independence-day-parade-740x400.jpg" alt="Independence Day in Washington, D.C.">
+                <h3>Independence Day in Washington, D.C.</h3>
+                <p>Date: July 4</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="event-info-popup" class="info-popup">
+        <span class="close-btn" onclick="closeEventInfo()">&times;</span>
+        <h3 id="event-title"></h3>
+        <p id="event-description"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
